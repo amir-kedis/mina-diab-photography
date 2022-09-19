@@ -1,0 +1,104 @@
+#my-scrollbar {
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+}
+
+input,
+textarea,
+button,
+select,
+a,
+div {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+:root {
+  font-size: 16px;
+
+  @media #{$upSMDesktop} {
+    font-size: 16px;
+  }
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: inherit;
+  font-family: inherit;
+  &::before,
+  &::after {
+    font-family: inherit;
+    box-sizing: inherit;
+  }
+}
+
+body {
+  position: relative;
+  overflow: hidden;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-family: "Sorts Mill Goudy", serif;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  outline: none;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media #{$upTaplet} {
+    width: 750px;
+  }
+
+  @media #{$upSMDesktop} {
+    width: 970px;
+  }
+
+  @media #{$upLGDesktop} {
+    width: 1170px;
+  }
+}
+
+.hidden-sm {
+  @media (max-width: 991px) {
+    display: none;
+  }
+}
+
+.hidden-lg {
+  @media #{$upSMDesktop} {
+    display: none;
+  }
+}

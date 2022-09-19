@@ -1,0 +1,39 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "a website for photographer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Amir-anwar/mina-website.git"
+  },
+  "author": "Amir Anwar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Amir-anwar/mina-website/issues"
+  },
+  "homepage": "https://github.com/Amir-anwar/mina-website#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.8.2",
+    "browser-sync": "^2.26.7",
+    "cssnano": "^4.1.10",
+    "eslint": "^7.3.0",
+    "eslint-config-google": "^0.14.0",
+    "gulp": "github:gulpjs/gulp",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-pngquant": "^9.0.0"
+  },
+  "dependencies": {
+    "@glidejs/glide": "^3.4.1",
+    "smooth-scrollbar": "^8.5.2"
+  }
+}

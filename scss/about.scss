@@ -1,0 +1,103 @@
+// libraries
+@import "libs/normalize";
+
+// my strucure
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "helpers/global";
+
+@import "components/components";
+
+@import "layout/header";
+
+.navbar--web {
+  position: relative;
+  color: #000;
+
+  .nav {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .menu-branding a img {
+    width: 300px;
+  }
+}
+
+.navbar-container .container .menu-btn .btn-line {
+  background-color: $darkColor;
+}
+
+.navbar-container {
+  position: relative;
+}
+
+.about-me {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  .main-title {
+    margin: 2rem;
+  }
+
+  .paragraph {
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.072rem;
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+  &__container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    .wrapper {
+      flex-basis: 25%;
+
+      &:nth-of-type(2) {
+        flex-basis: 50%;
+        padding-left: 4rem;
+        padding-right: 4rem;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  @media #{$downSMDesktop} {
+    &__container {
+      flex-flow: column wrap;
+      padding-left: 15px;
+      padding-right: 15px;
+
+      .main-title {
+        font-size: 1.5rem;
+      }
+
+      .wrapper {
+        &:nth-of-type(1) {
+          order: 2;
+        }
+        &:nth-of-type(2) {
+          order: 1;
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+      }
+    }
+
+    .btn {
+      margin-top: 2rem;
+    }
+  }
+}
+
+@import "layout/footer";

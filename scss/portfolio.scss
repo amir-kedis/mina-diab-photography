@@ -1,0 +1,50 @@
+// libraries
+@import "libs/normalize";
+@import 'libs/lightbox.min';
+
+// my strucure
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "helpers/global";
+
+@import "components/components";
+
+@import "layout/header";
+
+.navbar--web {
+  position: relative;
+  color: #000;
+
+  .nav {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .menu-branding a img {
+    width: 300px;
+  }
+}
+
+.navbar-container .container .menu-btn .btn-line {
+  background-color: $darkColor;
+}
+
+.navbar-container {
+  position: relative;
+}
+
+.featured {
+  text-align: center;
+
+  .main-title {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .btn {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+}
+
+@import "layout/footer";

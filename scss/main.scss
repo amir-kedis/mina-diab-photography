@@ -1,0 +1,17 @@
+// libraries
+@import 'libs/lightbox.min';
+@import 'libs/normalize';
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+
+// my strucure
+@import 'helpers/variables';
+@import 'helpers/mixins';
+@import 'helpers/global';
+
+@import 'components/components';
+
+@import 'layout/header';
+
+@import 'pages/home';
+
+@import 'layout/footer';

@@ -1,0 +1,14 @@
+#E52A2A
+#EA2027
+#707070
+#675B29
+#141414
+#F6F6F6
+#F2F2F2
+#B514F9
+#E9E9E9
+
+open sans : regular - bold
+font-family: 'Open Sans', sans-serif;
+sorts mill goudy
+font-family: 'Sorts Mill Goudy', serif;
